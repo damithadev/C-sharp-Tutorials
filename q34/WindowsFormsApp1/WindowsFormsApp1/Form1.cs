@@ -15,15 +15,32 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            label4.Text = "";
+            label5.Text = "";
+            label6.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //double batch = int.Parse(textBox2.Text);
+           
 
             label4.Text = textBox1.Text; 
             label5.Text = textBox2.Text;
             label6.Text = textBox3.Text;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+
+
+            label4.Text = "";
+            label5.Text = "";
+            label6.Text = "";
+
         }
     }
 }
