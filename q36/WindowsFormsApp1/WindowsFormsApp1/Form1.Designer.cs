@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(214, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login Form";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // username
             // 

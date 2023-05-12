@@ -21,7 +21,13 @@ namespace WindowsFormsApp1
         {
             Form2 form2 = new Form2();
 
-            if (username.Text=="Admin" && password.Text=="admin123")
+            
+
+            if (username.Text == "" && password.Text == "")
+            {
+                MessageBox.Show("Username and password cannot be empty");
+            }
+            else if (username.Text == "Admin" && password.Text == "admin123")
             {
                 form2.Show();
                 this.Hide();
@@ -31,11 +37,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Incorrect username or password");
             }
             
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
