@@ -48,10 +48,10 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int num1 = int.Parse(textBox1.Text);
-            int num2 = int.Parse(textBox2.Text);
+            double num1 = double.Parse(textBox1.Text);
+            double num2 = double.Parse(textBox2.Text);
 
-            int div = num1 / num2;
+            double div = num1 / num2;
             label4.Text = "Division : " + div.ToString();
         }
     }

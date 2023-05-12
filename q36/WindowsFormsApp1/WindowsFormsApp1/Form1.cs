@@ -15,28 +15,26 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            label4.Text = "";
-            label5.Text = "";
-            label6.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label4.Text = textBox1.Text; 
-            label5.Text = textBox2.Text;
-            label6.Text = textBox3.Text;
+            Form2 form2 = new Form2();
+
+            if (username.Text=="Admin" && password.Text=="admin123")
+            {
+                form2.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect username or password");
+            }
+            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-
-
-            label4.Text = "";
-            label5.Text = "";
-            label6.Text = "";
 
         }
     }
