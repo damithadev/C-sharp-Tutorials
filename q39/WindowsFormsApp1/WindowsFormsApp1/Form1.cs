@@ -33,10 +33,10 @@ namespace WindowsFormsApp1
             SqlConnection con = new SqlConnection(connectionString);
             string query = "INSERT INTO info (ID) VALUES (@ID)";
             SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@ID", ID); // Add the parameter and its value
 
             try
             {
-
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Record Inserted Successfully");
