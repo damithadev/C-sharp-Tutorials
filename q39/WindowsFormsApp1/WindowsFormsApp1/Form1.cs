@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             int ID = int.Parse(textBox1.Text);
 
             SqlConnection con = new SqlConnection(connectionString);
-            string query = "INSERT INTO info (ID) VALUES (ID)";
+            string query = "INSERT INTO info (ID) VALUES (@ID)";
             SqlCommand cmd = new SqlCommand(query, con);
 
             try
