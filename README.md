@@ -1,2 +1,2 @@
 # C-sharp-tutorials
-Qusetion List PDF Updated.
+Question List PDF Updated.
