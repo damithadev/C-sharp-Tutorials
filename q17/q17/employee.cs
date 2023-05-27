@@ -12,21 +12,21 @@ namespace q17
         {
             
 
-            if (h < 10) 
+            if (h >= 10 && h < 20) 
             { 
-                return 5000;
+                return 25000;
             }
-            else if (h > 30)
+            else if (h >= 20 && h < 30)
+            {
+                return 45000;
+            }
+            else if (h >= 30)
             {
                 return 60000;
             }
-            else if (h < 20)
-            {
-                return 25000;
-            }
             else
             {
-                return 45000;
+                return 5000;
             }
 
 
