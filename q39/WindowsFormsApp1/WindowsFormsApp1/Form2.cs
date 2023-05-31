@@ -18,6 +18,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+
+        //string = "DELETE FROM info WHERE (ID) = ('"+ID+"')";
+        //SqlCommand cmd = new SqlCommand(query, con);
+
+
+
         Form1 obj = new Form1();
 
         private void button1_Click(object sender, EventArgs e)
